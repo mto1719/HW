@@ -5,21 +5,22 @@
  */
 public class StringManipulator 
 {
-	String str = "";
-	public String noVowels()
+	public String noVowels(String str)
 	{  
+		String noVowels = "";
 	    for (int i = 0; i < str.length(); i++) 
 	    {  
-	    	 char c = noVowels().charAt(i);
-	         if (c[i] == 'a' || c[i] == 'e' || c[i] == 'i' || c[i] == 'o' || c[i] == 'u')
+	    	 char c = str.charAt(i);
+	         if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
 	         {
-	        	 String front = str.substring(0, i);
-	             String back = str.substring(i + 1);
-	             str = front + "*" + back;
+	        	 noVowels += "*";
 	         }
-	           return str;
+	         else
+	         {
+	        	 noVowels += str.charAt(i);
+	         }
 	    }  
-	       
+	    return noVowels;
 	}  
 	public String reverse()
 	{
