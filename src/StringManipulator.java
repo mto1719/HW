@@ -22,15 +22,15 @@ public class StringManipulator
 	    }  
 	    return noVowels;
 	}  
-	public String reverse()
+	public String reverse(String str)
 	{
-		String reverseStr = "";
-		int len = reverseStr.length();
+		String strR = "";
+		int len = strR.length();
 		for (int i=len-1;i>=0;i--) 
         {
-            reverseStr = reverseStr + reverseStr.charAt(i);
+            strR = strR + strR.charAt(i);
         }
-		return reverseStr;
+		return strR;
 	}
 }
 
