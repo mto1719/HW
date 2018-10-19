@@ -5,6 +5,7 @@
  */
 public class StringManipulator 
 {
+	public String in;
 	public String noVowels(String str)
 	{  
 		String noVowels = "";
